@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>domresize 元素宽高变化 | Easy Project Vue</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="./logo.png">
+    <meta name="description" content="一个基于Vue2的工具库">
+    
+    <link rel="preload" href="./assets/css/0.styles.998f9a48.css" as="style"><link rel="preload" href="./assets/js/app.686d2a16.js" as="script"><link rel="preload" href="./assets/js/2.2240192a.js" as="script"><link rel="preload" href="./assets/js/22.3754740e.js" as="script"><link rel="prefetch" href="./assets/js/10.5d9fadfe.js"><link rel="prefetch" href="./assets/js/11.bf77bdfb.js"><link rel="prefetch" href="./assets/js/12.1630dcf5.js"><link rel="prefetch" href="./assets/js/13.a5c10a0c.js"><link rel="prefetch" href="./assets/js/14.919dc6dc.js"><link rel="prefetch" href="./assets/js/15.96669985.js"><link rel="prefetch" href="./assets/js/16.45eb253b.js"><link rel="prefetch" href="./assets/js/17.9aa997bd.js"><link rel="prefetch" href="./assets/js/18.52759b62.js"><link rel="prefetch" href="./assets/js/19.c811e8c9.js"><link rel="prefetch" href="./assets/js/20.09433707.js"><link rel="prefetch" href="./assets/js/21.58c12c7f.js"><link rel="prefetch" href="./assets/js/23.0917d254.js"><link rel="prefetch" href="./assets/js/24.ef0a9431.js"><link rel="prefetch" href="./assets/js/25.8a9a3101.js"><link rel="prefetch" href="./assets/js/26.5f27b72b.js"><link rel="prefetch" href="./assets/js/27.328a4f59.js"><link rel="prefetch" href="./assets/js/28.20a60a02.js"><link rel="prefetch" href="./assets/js/29.4d22f9df.js"><link rel="prefetch" href="./assets/js/3.5f67d5cb.js"><link rel="prefetch" href="./assets/js/30.a0bb440a.js"><link rel="prefetch" href="./assets/js/31.963d4463.js"><link rel="prefetch" href="./assets/js/32.c19c46ed.js"><link rel="prefetch" href="./assets/js/33.694cbca0.js"><link rel="prefetch" href="./assets/js/34.4dac7861.js"><link rel="prefetch" href="./assets/js/35.5819a850.js"><link rel="prefetch" href="./assets/js/36.3b719e6a.js"><link rel="prefetch" href="./assets/js/37.555c81bd.js"><link rel="prefetch" href="./assets/js/38.a56afe73.js"><link rel="prefetch" href="./assets/js/4.706ef5a5.js"><link rel="prefetch" href="./assets/js/5.0536bff3.js"><link rel="prefetch" href="./assets/js/6.4359e786.js"><link rel="prefetch" href="./assets/js/7.c9af1e96.js"><link rel="prefetch" href="./assets/js/8.8b5ffe5d.js"><link rel="prefetch" href="./assets/js/9.60eaa319.js">
+    <link rel="stylesheet" href="./assets/css/0.styles.998f9a48.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/./" class="home-link router-link-active"><img src="./logo.png" alt="Easy Project Vue" class="logo"> <span class="site-name can-hide">Easy Project Vue</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/./guide/components/space.html" class="nav-link">
+  组件
+</a></div><div class="nav-item"><a href="https://github.com/Lastly1999/uni-colorui-next" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/./guide/components/space.html" class="nav-link">
+  组件
+</a></div><div class="nav-item"><a href="https://github.com/Lastly1999/uni-colorui-next" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>开始使用</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/./guide/explain.html" class="sidebar-link">介绍</a></li><li><a href="/./guide/install.html" class="sidebar-link">快速开始</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>组件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/./guide/components/space.html" class="sidebar-link">space 间距</a></li><li><a href="/./guide/components/ellipsis.html" class="sidebar-link">ellipsis 文本省略</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>指令</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/./guide/directives/copytouch.html" class="sidebar-link">copytouch 复制框选</a></li><li><a href="/./guide/directives/debounce.html" class="sidebar-link">debounce 防抖</a></li><li><a href="/./guide/directives/expandclick.html" class="sidebar-link">expandclick 扩展热区</a></li><li><a href="/./guide/directives/stretchheight.html" class="sidebar-link">stretchheight 余屏高度</a></li><li><a href="/./guide/directives/maskclosable.html" class="sidebar-link">maskclosable 蒙层点击</a></li><li><a href="/./guide/directives/domresize.html" aria-current="page" class="active sidebar-link">domresize 元素宽高变化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/./guide/directives/domresize.html#按需引入" class="sidebar-link">按需引入</a></li><li class="sidebar-sub-header"><a href="/./guide/directives/domresize.html#何时使用" class="sidebar-link">何时使用</a></li><li class="sidebar-sub-header"><a href="/./guide/directives/domresize.html#用法示例" class="sidebar-link">用法示例</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>函数</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/./guide/utils/deepClone.html" class="sidebar-link">deepClone 深度克隆</a></li><li><a href="/./guide/utils/highlightKeywords.html" class="sidebar-link">highlightKeywords 高亮文字</a></li><li><a href="/./guide/utils/isArrayEmpty.html" class="sidebar-link">isArrayEmpty 数组判空</a></li><li><a href="/./guide/utils/isNumberEmpty.html" class="sidebar-link">isNumberEmpty 数字判空</a></li><li><a href="/./guide/utils/isStringEmpty.html" class="sidebar-link">isStringEmpty 字符串判空</a></li><li><a href="/./guide/utils/isObjectEmpty.html" class="sidebar-link">isObjectEmpty 对象判空</a></li><li><a href="/./guide/utils/removeHTMLTag.html" class="sidebar-link">removeHTMLTag 字符串去HTML标签</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>代码片段</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/./guide/codes/encapsulation.html" class="sidebar-link">二次封装的需求场景</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="domresize-元素宽高变化"><a href="#domresize-元素宽高变化" class="header-anchor">#</a> domresize 元素宽高变化</h1> <p><code>HTML</code>元素（<code>DOM</code>）<strong>宽高变化后</strong>的监听事件</p> <h2 id="按需引入"><a href="#按需引入" class="header-anchor">#</a> 按需引入</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> Domresize <span class="token keyword">from</span> <span class="token string">'easy-project-vue/dist/directives/domresize.js'</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Domresize<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="何时使用"><a href="#何时使用" class="header-anchor">#</a> 何时使用</h2> <p><code>echarts</code>、<code>baidu</code>地图、等等<code>canvas</code>绘图插件，他们的初始化是一般是选定一个容器，比如<code>echarts</code>的初始化：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code> <span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">&quot;id&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+echarts<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><p>这时候就带来一个问题，它的<strong>宽高</strong>一般是<code>初始化</code>时设定好的。</p> <p>当<strong>窗口变化</strong>等情况让这个盒子的<strong>宽高变小</strong>或<strong>变大</strong>，这时候就得<strong>手动做宽高变更</strong>，因为这类插件一般用的<code>canvas</code>绘图。</p> <p>所以我们需要一个<strong>钩子函数</strong>来处理这个事件，绑定这个<strong>钩子函数</strong>就是<code>v-domresize</code>指令。</p> <h2 id="用法示例"><a href="#用法示例" class="header-anchor">#</a> 用法示例</h2> <p>在使用<code>v-domresize</code>指令绑定<code>DOM</code>宽高变化后的监听事件，下面以<code>echarts</code>封装为例：</p> <div class="language-vue extra-class"><pre class="language-vue"><code>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>id<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ width: width, height: height }<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-domresize</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>resizeCharts<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> <span class="token punctuation">{</span>v4 <span class="token keyword">as</span> uuidv4<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'uuid'</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> echarts <span class="token keyword">from</span> <span class="token string">'echarts'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'EChart'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">type</span><span class="token operator">:</span> String<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">''</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">height</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">type</span><span class="token operator">:</span> String<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">'250px'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">width</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">type</span><span class="token operator">:</span> String<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">'100%'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">myChart</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">option</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">tooltip</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">trigger</span><span class="token operator">:</span> <span class="token string">'item'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">legend</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">top</span><span class="token operator">:</span> <span class="token string">'5%'</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">left</span><span class="token operator">:</span> <span class="token string">'center'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">series</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>title<span class="token punctuation">,</span>
+            <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'pie'</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">radius</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'50%'</span><span class="token punctuation">,</span> <span class="token string">'90%'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">avoidLabelOverlap</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token literal-property property">show</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+              <span class="token literal-property property">position</span><span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span>
+              <span class="token literal-property property">lineHeight</span><span class="token operator">:</span> <span class="token number">16</span><span class="token punctuation">,</span>
+              <span class="token literal-property property">fontSize</span><span class="token operator">:</span> <span class="token number">16</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">emphasis</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token literal-property property">show</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                <span class="token literal-property property">fontSize</span><span class="token operator">:</span> <span class="token string">'16'</span><span class="token punctuation">,</span>
+                <span class="token literal-property property">fontWeight</span><span class="token operator">:</span> <span class="token string">'bold'</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">labelLine</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token literal-property property">show</span><span class="token operator">:</span> <span class="token boolean">false</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 利用uuid生成动态id</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>id <span class="token operator">=</span> <span class="token function">uuidv4</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">replaceAll</span><span class="token punctuation">(</span><span class="token string">'-'</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">initData</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">beforeDestroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">destroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">resizeCharts</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 当宽高变化时，调用echarts的resize方法来适配宽高。</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>myChart<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>myChart<span class="token punctuation">.</span><span class="token function">resize</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">destroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>myChart <span class="token operator">&amp;&amp;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>myChart<span class="token punctuation">.</span><span class="token function">dispose</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>myChart <span class="token operator">=</span> <span class="token keyword">null</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">initData</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">destroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token comment">// 初始化init</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>myChart <span class="token operator">=</span> echarts<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">)</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">updateOption</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">updateOption</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>myChart<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>myChart<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>myChart<span class="token punctuation">.</span><span class="token function">setOption</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>option<span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/./guide/directives/maskclosable.html" class="prev">
+        maskclosable 蒙层点击
+      </a></span> <span class="next"><a href="/./guide/utils/deepClone.html">
+        deepClone 深度克隆
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="./assets/js/app.686d2a16.js" defer></script><script src="./assets/js/2.2240192a.js" defer></script><script src="./assets/js/22.3754740e.js" defer></script>
+  </body>
+</html>
